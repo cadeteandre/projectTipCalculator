@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-TS Trinkgeldrechner</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Trinkgeldrechner</h1>
+      <form onsubmit="return false">
+        <p>Wie hoch war die Rechnung?</p>
+        <div class="input__box">
+          <label>€</label>
+          <input type="number" id="inputBill">
+        </div>
+        <p>Wie viele Menschen teilen sich die Rechnung?</p>
+        <div class="input__box">
+          <label>👥</label>
+          <input type="number" id="inputPersonNum">
+        </div>
+        <select name="serviceRating" id="qualityService">
+          <option value="">Wie war der Service</option>
+          <option value="bad">Schlecht</option>
+          <option value="ok">Okay</option>
+          <option value="super">Super</option>
+        </select>
+        <button type="button">Berechne</button>
+        <section id="showResults"></section>
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

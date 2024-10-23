@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(99, 192, 213);
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input__box {
+  display: flex;
+  gap: 5px;
+  align-content: center;
+}
+
+.input__box input {
+  flex: 1;
+}
