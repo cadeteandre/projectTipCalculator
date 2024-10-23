@@ -32,5 +32,9 @@ button.addEventListener('click', () => {
 
     const result = tipCalculator(inputBill.value, inputPersonNum.value, serviceQuality.value);
 
-    showResults.innerHTML = `<p>${result.tip.toFixed(2)} / ${(result.billValue + result.tip).toFixed(2)} / ${result.pricePerPerson.toFixed(2)}</p>`;
+    showResults.innerHTML = `
+    <p>Das Trinkgeld ist: ${result.tip.toFixed(2)} €</p> 
+    <p>Die Gesammtsumme beträgt: ${(result.billValue + result.tip).toFixed(2)} €</p> 
+    <p>Der Preis pro Person ist: ${result.pricePerPerson.toFixed(2)} €</p>
+    `;
 })
